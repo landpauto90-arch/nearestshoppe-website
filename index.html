@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Shoppe Auto Supplies & Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Nearest <span>Shoppe</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Nearest <span>Shoppe</span></h1>
+            <p>Auto Supplies • Snacks • Drinks • Essentials</p>
+            <a href="https://wa.me/18687890535" target="_blank" class="whatsapp-btn">Order on WhatsApp</a>
+        </div>
+        <img src="fruit-stand.jpg" alt="Nearest Shoppe Fruit Stand" class="hero-img">
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-cards">
+            <div class="card">
+                <h3>Motor Oil</h3>
+                <p>High quality engine oils.</p>
+            </div>
+            <div class="card">
+                <h3>Car Batteries</h3>
+                <p>Reliable vehicle batteries.</p>
+            </div>
+            <div class="card">
+                <h3>Snacks & Drinks</h3>
+                <p>Cold beverages and quick snacks.</p>
+            </div>
+            <div class="card">
+                <h3>Phone Top-Ups</h3>
+                <p>Mobile credit available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <h2>Our Shop</h2>
+        <img src="fruit-stand.jpg" alt="Shop Gallery">
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-cards">
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>Great service and convenient location!</p>
+            </div>
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>Best place in Arima for snacks and quick auto supplies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Visit Us</h2>
+        <p>📱 1-868-789-0535</p>
+        <p>📍 Arima, Trinidad & Tobago</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps?q=Arima,+Trinidad+&+Tobago&output=embed" width="100%" height="300" style="border:0;"></iframe>
+        </div>
+    </section>
+</body>
+</html>/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #fff;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo span {
+    color: #4CAF50;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: left;
+    color: #fff;
+}
+.hero img.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.hero-text h1 {
+    font-size: 48px;
+}
+.hero-text span {
+    color: #FFD700;
+}
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Products */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Reviews */
+.reviews {
+    padding: 50px 20px;
+    text-align: center;
+}
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.review-card {
+    background: #fff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+    background: #111;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+.contact .map iframe {
+    border: none;
+    border-radius: 8px;
+}
